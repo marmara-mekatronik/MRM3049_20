@@ -26,24 +26,24 @@ bool Banka::bul(int o, int su, int sa) {         //ODA,SATIR VE SUTUN DEGER ARAL
 int main() {
 	Banka kasa;
 	Banka kasalar[5];
-	Banka *customer;
+	Banka* customer;
 
 	customer = &kasa;
 
 	kasa.bul(7, 12, 10);
-	cout << "Odanizin numarasi " << kasa.oda() << "'dir. Kasaniza ulasmak icin ("<< kasa.kasaSutun() << ") numarali sutunu ve ("<< kasa.kasaSatir() << ") numarali satira bakabilirsiniz. "<<endl;
-	cout << "Giris Kodunuz: (o" << kasa.oda() << kasa.kasaSutun() << kasa.kasaSatir()<< ")"<< endl;
-	
+	cout << "Odanizin numarasi " << kasa.oda() << "'dir. Kasaniza ulasmak icin (" << kasa.kasaSutun() << ") numarali sutunu ve (" << kasa.kasaSatir() << ") numarali satira bakabilirsiniz. " << endl;
+	cout << "Giris Kodunuz: (o" << kasa.oda() << kasa.kasaSutun() << kasa.kasaSatir() << ")" << endl;
+
 	cout << "-------------------------------------------------------------------------------------------" << endl;
 
 	customer->bul(5, 3, 9);
 	cout << "Odanizin numarasi " << customer->oda() << "'dir. Kasaniza ulasmak icin (" << customer->kasaSutun() << ") numarali sutunu ve (" << customer->kasaSatir() << ") numarali satira bakabilirsiniz. " << endl;
 	cout << "Giris Kodunuz: (o" << customer->oda() << customer->kasaSutun() << customer->kasaSatir() << ")" << endl;
-		
+
 	cout << "-------------------------------------------------------------------------------------------" << endl;
 
 	kasalar[0].bul(9, 15, 15);
 	cout << "Odanizin numarasi " << kasalar[0].oda() << "'dir. Kasaniza ulasmak icin (" << kasalar[0].kasaSutun() << ") numarali sutunu ve (" << kasalar[0].kasaSatir() << ") numarali satira bakabilirsiniz. " << endl;
 	cout << "Giris Kodunuz: (o" << kasalar[0].oda() << kasalar[0].kasaSutun() << kasalar[0].kasaSatir() << ")" << endl;
-		return 0;
-	}
+	return 0;
+}
