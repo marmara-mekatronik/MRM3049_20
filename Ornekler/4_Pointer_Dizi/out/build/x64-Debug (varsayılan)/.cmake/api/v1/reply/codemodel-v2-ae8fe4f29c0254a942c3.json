@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "4_Pointer_Dizi",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "4_Pointer_Dizi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4_Pointer_Dizi-Debug-9a8040d67b66731758b3.json",
+					"name" : "4_Pointer_Dizi",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/GURSOY/Documents/GitHub/Rıdvan Gürsoy/Ornekler/4_Pointer_Dizi/out/build/x64-Debug (varsayılan)",
+		"source" : "C:/Users/GURSOY/Documents/GitHub/Rıdvan Gürsoy/Ornekler/4_Pointer_Dizi"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

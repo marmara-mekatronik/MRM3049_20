@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "2_Inline_Fonksiyon",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "2_Inline_Fonksiyon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-2_Inline_Fonksiyon-Debug-15014a2393eb1c360bc5.json",
+					"name" : "2_Inline_Fonksiyon",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/GURSOY/Documents/GitHub/Rıdvan Gürsoy/Ornekler/2_Inline_Fonksiyon/out/build/x64-Debug (varsayılan)",
+		"source" : "C:/Users/GURSOY/Documents/GitHub/Rıdvan Gürsoy/Ornekler/2_Inline_Fonksiyon"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

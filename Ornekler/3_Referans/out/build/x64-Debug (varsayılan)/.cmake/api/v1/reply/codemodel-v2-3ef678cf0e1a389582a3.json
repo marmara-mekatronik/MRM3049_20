@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "3_Referans",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "3_Referans::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3_Referans-Debug-ac8f7e47182334c55121.json",
+					"name" : "3_Referans",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/GURSOY/Documents/GitHub/Rıdvan Gürsoy/Ornekler/3_Referans/out/build/x64-Debug (varsayılan)",
+		"source" : "C:/Users/GURSOY/Documents/GitHub/Rıdvan Gürsoy/Ornekler/3_Referans"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
