@@ -26,7 +26,7 @@ bool Banka::bul(int o, int su, int sa) {         //ODA,SATIR VE SUTUN DEGER ARAL
 int main() {
 	Banka kasa;
 	Banka kasalar[5];
-	Banka* customer;
+	Banka *customer;
 
 	customer = &kasa;
 
