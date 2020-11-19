@@ -1,1 +1,0 @@
-****Kasım Can Halis****
