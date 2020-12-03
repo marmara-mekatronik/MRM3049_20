@@ -1,37 +1,59 @@
 #include <iostream>
 #include <ctime>
 #include <chrono>
+
 using namespace std;
 
-inline int islem_inline(int a, int b, int c);
-
-int islem_inline(int a, int b , int c){
-    return ((a-c)+b)*(b);
-
-}
+inline double banka_inline(double yatirilcak, double cekilcek);
 
 
-int main()
-{
-    chrono::time_point<chrono::system_clock> d_basla , d_son;
-    d_basla=chrono::system_clock::now();
-    for (int a=0; a<8500;a++){
-        for(int b=0;b<2000;b++){
-            for(int c=0;c<1250;c--){
+inline double banka_inline(double yatirilcak, double cekilcek) {
 
-            islem_inline(a,b,c);
+    double hesapdaki_para= 0;
 
-            }
+
+    return hesapdaki_para+yatirilcak-cekilcek ;
+    }
+
+int main() {
+    double yatirilcak, cekilcek;
+
+    cout<<"Bankamiza Hosgeldiniz.. "<<endl;
+
+
+    cout<<"Yatirmak istediginiz miktari giriniz: ";
+    cin >> yatirilcak;
+
+    cout<<"Cekmek istediginiz miktari giriniz: ";
+    cin >> cekilcek;
+
+
+    chrono::time_point<chrono::system_clock> baslangic, bitis;
+    baslangic = chrono::system_clock::now();
+
+    for (double a = 0; a < yatirilcak; a++) {
+
+        for (double b = 0; b < cekilcek; b++){
+
+            banka_inline(a,b);
         }
     }
-    d_son=chrono::system_clock::now();
+    cout<< "Paraniz Hesaba yatiriliyor"<< endl;
+    cout<< "Paraniz Hesabdan Cekiliyor"<< endl;
+    bitis = chrono::system_clock::now();
 
-    chrono::duration<double> gecen_zaman = d_son - d_basla;
-    time_t baslangic_zamani=chrono::system_clock::to_time_t(d_basla);
-    time_t bitis_zamani=chrono::system_clock::to_time_t(d_son);
+    chrono::duration<double> gecen_zaman = bitis - baslangic;
+    time_t baslangic_zamani = chrono::system_clock::to_time_t(baslangic);
+    time_t bitis_zamani = chrono::system_clock::to_time_t(bitis);
 
-    cout<< "Baslangic Zamani: " << ctime(&baslangic_zamani) << endl;
-    cout<< "Bitis Zamani: " << ctime(&bitis_zamani) << endl;
-    cout<< "Gecen Sure: " << gecen_zaman.count() << "saniyedir" << endl;
+    cout << "Hesabinizdeki para : "<<banka_inline(yatirilcak,cekilcek)<< endl;
+
+    cout << "Sisteme giris zamani : " << ctime(&baslangic_zamani) << endl;
+
+    cout << "Sistemden cikis zamani : " << ctime(&bitis_zamani) << endl;
+
+    cout << "Banka isleminiz " << gecen_zaman.count() << " saniyede gerceklesmistir. " << endl;
+
+
     return 0;
 }
