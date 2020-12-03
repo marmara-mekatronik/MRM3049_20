@@ -1,1 +1,0 @@
-**Mertcan Öztaş**
