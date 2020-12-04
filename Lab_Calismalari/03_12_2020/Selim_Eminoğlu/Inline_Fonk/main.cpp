@@ -10,7 +10,7 @@ int yaris(int a, int b){
     return (a+b)*(a+b);
 }
 
-int yaris_inline(int a, int b){
+inline int yaris_inline(int a, int b){
     return (a+b)*(a+b);
 }
 
