@@ -2,12 +2,12 @@
 
 using namespace std;
 
-/* Horsepower = Torque x RPM / 5,252 */
+/*  Horsepower = Torque x RPM / 5,252   */
 
 class Vehicle
 {
     public:
-        Vehicle(int g=1, int y=1);
+        Vehicle(int t, int r);
         void setTorque(int t);
         void setRPM(int r);
     
@@ -35,8 +35,8 @@ class Car: public Vehicle
 {
     public:
         Car(int t=700, int r=6000);
+        
         int getHorsepower()
-
         {return torque*rpm/5;}
 };
 
