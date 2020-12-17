@@ -1,1 +1,0 @@
-**İsmail Mervan Özcan**
