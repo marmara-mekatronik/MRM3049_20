@@ -35,7 +35,7 @@ class Car: public Vehicle
 {
     public:
         Car(int t=700, int r=6000);
-        int getAlan()
+        int getHorsepower()
 
         {return torque*rpm/5;}
 };
@@ -51,7 +51,7 @@ int main()
     Car Challenger;
     Challenger.setTorque(656);
     Challenger.setRPM(4800);
-    cout << "Arabanin beygir gucu : " << Challenger.getAlan()<< endl;
+    cout << "Arabanin beygir gucu : " << Challenger.getHorsepower()<< endl;
 
     return 0;
 }
