@@ -2,53 +2,53 @@
 
 using namespace std;
 
-class Engine
+class Motor
 {
     public:
-        void setBore(int b);
-        void setStroke(int s);
-        void setCylinder(int c);
+        void setCap(int b);             //Silindir çapı
+        void setStrok(int s);           //Strok sayısı
+        void setSilindir(int c);        //Silindir sayısı
 
     protected:
-        int bore, stroke, cylinder;
+        int cap, strok, silindir;
 };
 
-void Engine::setBore(int b) {bore = b;}
-void Engine::setStroke(int s) {stroke = s;}
-void Engine::setCylinder(int c) {cylinder = c;}
+void Engine::setCap(int b) {cap = b;}
+void Engine::setStrok(int s) {strok = s;}
+void Engine::setSilindir(int c) {silindir = c;}
 
-class Displacement:public Engine
+class Hacim:public Motor                //Motor hacmi
 {
-    int getDisplacement() {return ((bore * bore) * stroke * cylinder * (3.14 / 4))/100;}
+    int getHacim() {return ((cap * cap) * strok * silindir * (3.14 / 4))/100;}
 
-    Displacement operator+(const Displacement& x)
+    Hacim operator+(const Hacim& x)
     {
-        Displacement engine1;
-        engine1.bore=this->bore + x.bore;
-        engine1.stroke=this->stroke + x.stroke;
-        engine1.cylinder= this->cylinder + x.cylinder;
-        return engine1
+        Hacim motor1;
+        motor1.cap=this->cap + x.cap;
+        motor1.strok=this->strok + x.strok;
+        motor1.silindir= this->silindir + x.silindir;
+        return motor1
     }
 };
 
 int main()
 {
-    Displacement Engine1;
-    Engine1.setBore(90);
-    Engine1.setStroke(90);
-    Engine1.setCylinder(8);
+    Hacim Motor1;
+    Motor1.setCap(90);
+    Motor1.setStrok(90);
+    Motor1.setSilindir(8);
 
-    Displacement Engine2;
-    Engine2.setBore(85);
-    Engine2.setStroke(80);
-    Engine2.setCylinder(6);
+    Hacim Motor2;
+    Motor2.setCap(85);
+    Motor2.setStrok(80);
+    Motor2.setSilindir(6);
 
-    Displacement Engine3;
-    int displacement = 0;
-    Engine3 = Engine1 + Engine2;
-    displacement = Engine3.getDisplacement();
+    Hacim Motor3;
+    int hacim = 0;
+    Motor3 = Motor1 + Motor2;
+    hacim = Motor3.getHacim();
 
-    cout << "Total Engine Displacement size : " << displacement << endl;
+    cout << "Toplam motor hacmi : " << hacim << endl;
     
     return 0;
 }
