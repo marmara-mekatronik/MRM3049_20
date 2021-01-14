@@ -19,20 +19,20 @@ public:
     }
 
     T& operator[](int x){
-        return yeni_veri[x];
+        return y_veri[x];
     }
 
-    void bubbleSort(T h[],int n);
+    double bubbleSort(T a[],int b);
 
-    int Uzunlukal();
+    int Uzunluk_al();
 };
 template<typename T>
-int Dizi<T>::Uzunlukal() {
+int Dizi<T>::Uzunluk_al() {
     return e_uzunluk;
 }
 
 template<class T>
-void Dizi<T>::bubbleSort(T a[], int b) {
+double Dizi<T>::bubbleSort(T a[], int b) {
     for (int i = 0; i < n; ++i) {
         for (int j = n-1;i < j;j--){
             if (h[j]<h[j-1]){
@@ -40,6 +40,7 @@ void Dizi<T>::bubbleSort(T a[], int b) {
             }
         }
     }
+    return a[];
 }
 
 #endif // TEMPLETE_ODEV_H_INCLUDED

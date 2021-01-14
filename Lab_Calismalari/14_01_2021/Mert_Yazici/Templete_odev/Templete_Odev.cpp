@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    Dizi<int> intdizi(1,2,9,3,10);
-    int y = intdizi.Uzunlukal();
+    Dizi<double> doubledizi(1,2,9,3,10);
+    int y = doubledizi.Uzunluk_al();
 
 //Hocam buraya kadar gelebildim
 
