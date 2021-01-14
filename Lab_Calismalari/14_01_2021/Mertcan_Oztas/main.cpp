@@ -18,7 +18,7 @@ void BubbleSort(T a[], int n)
 
 int main()
 {
-    int a[5]={10,50,30,40,20};
+    int a[5]={15,60,20,40,25};
     int n = sizeof (a) / sizeof (a[0]);
 
     BubbleSort()<int>(a,n);
@@ -29,7 +29,7 @@ int main()
         cout << a[i] << "\t" << endl;
     }
 
-    double b[5]={1.1,5.5,3.3,4.4,2.2};
+    double b[5]={1.5,5.6,3.2,4.1,2.7};
     int m = sizeof (b) / sizeof (b[0]);
 
     BubbleSort()<double>(b,n);
@@ -45,8 +45,8 @@ int main()
 
 int main()
 {
-    Array<int> intArray(12);
-    Array<double> doubleArray(12);
+    Array<int> intArray(10);
+    Array<double> doubleArray(10);
 
     for (int counter= 0; counter < intArray.getLength(); ++counter)
     {
