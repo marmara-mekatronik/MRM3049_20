@@ -11,7 +11,7 @@ int main() {
     st << "Merhaba Dünya! Nasılsın?";
     st.close();
     st >> dizi ;
-    st.open("./dosya.dat",ios::out);
+    st.open("./dosya.dat",ios::out|ios::in);
     st >> dizi;
     cout << dizi << endl ;
     return 0;
