@@ -2,32 +2,33 @@
 
 using namespace std;
 
-class A {
+class Sinif_B;
+
+class Sinif_A{
 public:
-    A();
-    friend class B;
+    Sinif_A():a(10){};
+   friend class Sinif_B;
 private:
     int a;
 };
 
-class B {
+class Sinif_B{
 public:
-    void GetGosterA(A &x);
+    void getGoster_A(Sinif_A &x);
+
 private:
     int b;
 };
 
-A::A() {
-    a = 0;
+void Sinif_B::getGoster_A(Sinif_A &x){
+    cout << "Sinif_A::a=" << x.a << endl;
 }
 
-void B::GetGosterA(A &x) {
-    cout << "A::a= " << x.a;
-}
 
 int main() {
-    A a1;
-    B b1;
-    b1.GetGosterA(a1);
+    Sinif_A Nesne_A;
+    Sinif_B Nesne_B;
+    Nesne_B.getGoster_A(Nesne_A);
+
     return 0;
 }
