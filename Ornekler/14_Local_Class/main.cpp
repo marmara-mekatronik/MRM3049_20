@@ -1,24 +1,20 @@
 #include <iostream>
-/* lokal sınıf tanımlama örneği */
 using namespace std;
-void hesapla(int veri);
-
-void hesapla(int veri){
-
-    class kare{
-    public:
-        int a;
-    };
-
-    kare kKare;
-    kare *KK;
-    kKare.a=veri;
-
-    cout << kKare.a << endl;
+void hesapla(int setSicaklik);
+void hesapla(int setSicaklik){
+class Klima{
+public:
+    int sicaklik;
+};
+Klima klimalar[10];
+    for (int i = 0; i < sizeof(klimalar)/ sizeof(Klima); ++i) {
+        klimalar[i].sicaklik=setSicaklik;
+        cout << "Klima " << i+1 << ": " <<
+        klimalar[i].sicaklik<< " set edildi " << endl;
+    }
 }
 
 int main() {
-    hesapla(55);
-
+    hesapla(15);
     return 0;
 }
