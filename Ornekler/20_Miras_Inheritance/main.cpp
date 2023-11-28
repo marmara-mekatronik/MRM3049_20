@@ -1,43 +1,43 @@
 #include <iostream>
-
 using namespace std;
 class Sekil{
 public:
     Sekil(int g=1, int y=1);
-    void setGenislik(int g);
-    void setYukseklik(int y);
+    void setYaz(int g, int y);
+    void getOku();
+private:
 protected:
     int genislik, yukseklik;
 };
-void Sekil::setGenislik(int g) {
-    genislik=g;
-}
-void Sekil::setYukseklik(int y) {
-    yukseklik=y;
-}
 Sekil::Sekil(int g, int y) {
-    yukseklik = y;
-    genislik=g;
+    genislik=g; yukseklik=y;
 }
-
-class Dikdortgen: public Sekil{
+void Sekil::setYaz(int g, int y) {
+    genislik=g; yukseklik=y;
+}
+void Sekil::getOku() {
+    cout << "Nesnesinin Genisligi : " << genislik << endl;
+    cout << "Nesnesinin Yuksekligi : " << yukseklik << endl;
+}
+class Diktorgen: public Sekil{
 public:
-    Dikdortgen(int g=2, int y=3);
-    int getAlan(){
-        return genislik*yukseklik;
-    }
+    Diktorgen(int g=1, int y=1);
+    int getAlan();
+private:
+protected:
 };
-
-Dikdortgen::Dikdortgen(int g, int y) {
-    genislik=g;
-    yukseklik=y;
+Diktorgen::Diktorgen(int g, int y) {
+    genislik=g;yukseklik=y;
 }
-
+int Diktorgen::getAlan() {
+    return genislik*yukseklik;
+}
 int main() {
-    Dikdortgen Dikdortgen1;
-    Dikdortgen1.setYukseklik(10);
-    Dikdortgen1.setGenislik(5);
-    cout << "Dikdortgenin Alanı : " << Dikdortgen1.getAlan()<< endl;
-
+    Diktorgen D1;
+    D1.getOku();
+    cout << "D1 nesnesinin alani: "<< D1.getAlan()<< endl;
+    D1.setYaz(20,50);
+    D1.getOku();
+    cout << "D1 nesnesinin alani: "<< D1.getAlan()<< endl;
     return 0;
 }
