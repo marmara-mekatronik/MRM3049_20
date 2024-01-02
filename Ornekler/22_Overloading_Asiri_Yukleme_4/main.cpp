@@ -1,10 +1,7 @@
 #include <iostream>
 #include <iomanip>
-
 #ifdef _WIN32
-
 #include <windows.h>
-
 #endif
 #ifdef __unix__
 #include <unistd.h>
